@@ -1,0 +1,17 @@
+[GLOBAL]
+pants_version = "2.14.0"
+
+
+backend_packages = [
+  "pants.backend.codegen.protobuf.lint.buf",
+  "pants.backend.codegen.protobuf.python",
+  "pants.backend.python",
+  "pants.backend.python.typecheck.mypy",
+]
+
+
+[python-protobuf]
+mypy_plugin = true
+
+[mypy]
+extra_type_stubs = ["types-protobuf==4.21.0.1"]
