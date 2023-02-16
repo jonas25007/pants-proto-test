@@ -1,6 +1,4 @@
 
-
-
 import unittest
 
 from proto import foo_pb2
